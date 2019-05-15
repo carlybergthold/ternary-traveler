@@ -1,0 +1,15 @@
+.header {
+    color: red;
+}
+
+#main {
+    display: flex;
+}
+
+#destinationsDiv {
+    border: 1px solid black;
+}
+
+#destinationsForm {
+    border: 1px solid blue;
+}
