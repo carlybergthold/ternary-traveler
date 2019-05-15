@@ -1,0 +1,38 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false,
+      "description": "pretty",
+      "location": "europe",
+      "cost": "$$",
+      "review": "awesome"
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    },
+    {
+      "name": "palace",
+      "description": "fancy",
+      "country": "Afghanistan",
+      "cost": "40",
+      "id": 4
+    },
+    {
+      "name": "palace",
+      "description": "fancy",
+      "country": "Afghanistan",
+      "cost": "40",
+      "id": 5
+    }
+  ],
+  "interests": []
+}
