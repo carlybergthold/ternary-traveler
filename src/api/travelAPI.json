@@ -1,28 +1,60 @@
 {
   "places": [
     {
-      "name": "palace",
-      "description": "palace",
-      "country": "Afghanistan",
-      "cost": "palace",
-      "review": "",
-      "id": 1
-    },
-    {
       "name": "Paris",
       "description": "french fries",
       "country": "France",
       "cost": "$800",
-      "review": "",
+      "review": "Yummy food but expensive",
       "id": 6
     },
     {
-      "name": "Zach's house",
-      "description": "messy",
-      "country": "Sri Lanka",
-      "cost": "$1.20",
+      "name": "Coffee shop",
+      "description": "Turkish coffee!",
+      "country": "Turkey",
+      "cost": "$1.50",
       "review": "",
-      "id": 7
+      "id": 8
+    },
+    {
+      "name": "Okinawa Island",
+      "description": "Its tropical climate makes it an ideal place to snorkel, hike and hang on the beach. ",
+      "country": "Japan",
+      "cost": "$700",
+      "review": "",
+      "id": 9
+    },
+    {
+      "name": "Yerevan",
+      "description": "beautiful views of Mount Ararat",
+      "country": "Armenia",
+      "cost": "$1200",
+      "review": "",
+      "id": 10
+    },
+    {
+      "name": "Galle",
+      "description": "In 1663, the Dutch built a fort there that can still be visited",
+      "country": "Sri Lanka",
+      "cost": "$750",
+      "review": "full of beaches, art and beautiful colonial architecture",
+      "id": 11
+    },
+    {
+      "name": "Lofoten Islands",
+      "description": "perfect for fishing and hiking",
+      "country": "Norway",
+      "cost": "$1800",
+      "review": "incredible scenery",
+      "id": 13
+    },
+    {
+      "name": "Mestia",
+      "description": "Drink Georgian wine, hike to a glacier, mingle with the locals and experience the epic beauty of the Caucasus mountains",
+      "country": "Georgia",
+      "cost": "$2000",
+      "review": "",
+      "id": 14
     }
   ],
   "interests": []
