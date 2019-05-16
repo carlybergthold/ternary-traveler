@@ -1,37 +1,44 @@
 {
   "places": [
     {
-      "id": 1,
-      "name": "Italy",
-      "visa_required": false,
-      "description": "pretty",
-      "location": "europe",
-      "cost": "$$",
-      "review": "awesome"
-    },
-    {
-      "id": 2,
-      "name": "Switzerland",
-      "visa_required": true
-    },
-    {
-      "id": 3,
-      "name": "France",
-      "visa_required": false
+      "name": "palace",
+      "description": "palace",
+      "country": "Afghanistan",
+      "cost": "palace",
+      "review": "",
+      "id": 1
     },
     {
       "name": "palace",
-      "description": "fancy",
+      "description": "palace",
       "country": "Afghanistan",
-      "cost": "40",
-      "id": 4
+      "cost": "palace",
+      "review": "",
+      "id": 2
     },
     {
       "name": "palace",
-      "description": "fancy",
+      "description": "palace",
       "country": "Afghanistan",
-      "cost": "40",
-      "id": 5
+      "cost": "$1250",
+      "review": "Amazing",
+      "id": 3
+    },
+    {
+      "name": "Paris",
+      "description": "french fries",
+      "country": "France",
+      "cost": "$800",
+      "review": "",
+      "id": 6
+    },
+    {
+      "name": "Zach's house",
+      "description": "messy",
+      "country": "Sri Lanka",
+      "cost": "$1.20",
+      "review": "",
+      "id": 7
     }
   ],
   "interests": []

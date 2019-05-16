@@ -1,6 +1,8 @@
 import { displayToDOM } from "./DOM";
 import { addCountries } from "./countryList";
 import { saveDestination } from "./saveDest";
+import { API } from "./dbCalls";
+import { getModal } from "./modal";
 
 
 displayToDOM.currentDestinations();
@@ -12,13 +14,36 @@ document.querySelector("#addDestBtn").addEventListener("click", function(e) {
     saveDestination();
 })
 
+//event listeners for edit, delete, and save buttons
+document.addEventListener("click", function(e) {
+    e.preventDefault();
+    let destId = e.target.id.split("-").pop();
+    let destCost = document.querySelector(`#editCost-${destId}`);
+    let destReview = document.querySelector(`#editReview-${destId}`);
+
+    if (e.target.className === "editBtn") {
+        // unhide input div with same id
+        document.querySelector(`#hidden-${destId}`).classList.remove("hidden");
+        let costVal = document.querySelector(`#costVal-${destId}`).textContent.split(": ").pop();
+        let reviewVal = document.querySelector(`#reviewVal-${destId}`).textContent.split(": ").pop();
+        destCost.value = costVal;
+        destReview.value = reviewVal;
+    }
+    else if (e.target.className === "deleteBtn") {
+        // getModal();
+        API.deleteData("places", destId).then(displayToDOM.currentDestinations)
+    }
+    else if (e.target.className === "saveBtn") {
+        let destObj = {
+            cost: destCost.value,
+            review: destReview.value
+          };
+        API.patchData("places", destId, destObj).then(displayToDOM.currentDestinations);
+    }
+})
 
 
 // As a user, I should be able to enter in an point of interest, and associate it with a place.
-
-// Given a user has entered in all details of a point of interest
-// When the user performs a gesture to save the point of interest
-// Then the point of interest should be displayed in the application
 
 // Given a user wants to change the cost of a point of interest or add/change the review to a point of interest
 // When the user performs a gesture to edit the point of interest
