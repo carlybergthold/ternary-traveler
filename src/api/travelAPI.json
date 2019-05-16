@@ -9,22 +9,6 @@
       "id": 1
     },
     {
-      "name": "palace",
-      "description": "palace",
-      "country": "Afghanistan",
-      "cost": "palace",
-      "review": "",
-      "id": 2
-    },
-    {
-      "name": "palace",
-      "description": "palace",
-      "country": "Afghanistan",
-      "cost": "$1250",
-      "review": "Amazing",
-      "id": 3
-    },
-    {
       "name": "Paris",
       "description": "french fries",
       "country": "France",
