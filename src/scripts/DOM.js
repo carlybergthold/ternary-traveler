@@ -10,16 +10,20 @@ export const displayToDOM = {
             newDest.id = `dest-${dest.id}`
             newDest.className = "destCard";
 
+            if (dest.review === null || dest.review === undefined) {
+                dest.review.value = "hidden";
+            }
+
             let destHTML = `
                 <h3>${dest.name}</h3>
-                <p>Description: ${dest.description}
-                </br>Location: ${dest.country}
-                </br><span id="costVal-${dest.id}">Cost: ${dest.cost}</span>
-                </br><span id="reviewVal-${dest.id}">Review: ${dest.review}</span>
+                <p><strong>DESCRIPTION:</strong> ${dest.description}
+                </br><strong>COUNTRY:</strong> ${dest.country}
+                </br><span id="costVal-${dest.id}"><strong>COST:</strong> ${dest.cost}</span>
+                </br><span id="reviewVal-${dest.id}" class="${dest.review}"><strong>REVIEW:</strong> ${dest.review}</span>
                 <section id="hidden-${dest.id}" class="hidden">
                     <label for="editCost">Edit Cost</label>
                     <input type="text" id="editCost-${dest.id}" class="editCost" name="editCost" required></input></br>
-                    <label for="editReview">Edit Review</label>
+                    <label for="editReview">Add Review</label>
                     <input type="text" id="editReview-${dest.id}" class="editReview" name="editReview" required></input></br>
                     <button class="saveBtn" id="saveBtn-${dest.id}">Save</button>
                 </section>
@@ -53,24 +57,6 @@ export const displayToDOM = {
         `
         const newDiv = document.createElement("div");
         newDiv.innerHTML = destForm;
-        container.appendChild(newDiv);
-    },
-    modal: function () {
-        const modalHTML = `
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-    
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>
-    
-        </div>
-        `
-        const container = document.querySelector("#destinationsForm");
-        const newDiv = document.createElement("div");
-        newDiv.innerHTML = modalHTML;
         container.appendChild(newDiv);
     }
 };

@@ -58,7 +58,6 @@ document.addEventListener("click", function(e) {
                 modal.style.display = "none";
             }
         }
-
     }
     else if (e.target.className === "saveBtn") {
         let destObj = {
